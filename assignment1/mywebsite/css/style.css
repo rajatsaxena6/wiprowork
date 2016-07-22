@@ -1,0 +1,118 @@
+.d
+{
+	background-color: lightgreen;
+}
+.e
+{
+	background-color: pink;
+}
+.f
+{
+	background-color: orange;
+}
+
+.container_12
+{
+	background-color: lightblue;
+
+}
+
+nav
+{
+	padding-top: 50px;
+}
+nav li
+{
+	display: inline;
+	
+}
+li a:hover
+{
+	font-size: 15px;
+	color:grey;
+}
+a
+{
+	text-decoration: none;
+	 
+
+}
+section
+{
+	box-sizing: border-box;
+	padding: 10px;
+}
+header
+{
+	position: fixed;
+	background-color: lightgrey;
+
+}
+
+.main
+{
+	margin-top: 150px;
+}
+
+h1,p
+{
+	font-family: 'Lato', sans-serif;
+}
+
+footer
+{
+	margin-top: 20px;
+}
+.banner
+{
+
+	margin-top: 30px;
+	
+	
+    position: relative;
+
+
+}
+.textonimage
+{
+	position: absolute;
+	top: 50px;
+	bottom: 0px;
+	left: 200px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 5px;
+	border-color: grey;
+}
+
+.third
+{
+	
+	margin-top: 30px;
+}
+.new{
+	background-color: yellow;
+
+}
+
+footer p
+{
+	font-family: sans-serif;
+
+}
+.row1
+{
+	background-color: red;
+
+}
+.row2
+{
+	background-color: blue;
+
+}
+.row3
+{
+	background-color: green;
+
+}
