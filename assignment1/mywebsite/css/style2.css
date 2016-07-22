@@ -1,0 +1,36 @@
+header
+{
+	background-color: lightgray;
+	position: fixed;
+
+}
+nav li
+{
+	display: inline;
+
+
+}
+nav
+{
+	padding-top: 50px;
+
+}
+li a
+{
+	text-decoration: none;
+
+}
+a:hover
+{
+	font-size: 15px;
+	color: black;
+}
+
+.main{
+	background-color: red;
+	margin-top: 150px;
+}
+
+section{
+	margin: 20px;
+}

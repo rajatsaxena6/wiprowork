@@ -1,6 +1,7 @@
 .d
 {
 	background-color: lightgreen;
+
 }
 .e
 {
@@ -42,16 +43,17 @@ section
 	box-sizing: border-box;
 	padding: 10px;
 }
-header
+.head
 {
 	position: fixed;
 	background-color: lightgrey;
-
+	
 }
 
 .main
 {
 	margin-top: 150px;
+
 }
 
 h1,p
@@ -63,19 +65,11 @@ footer
 {
 	margin-top: 20px;
 }
-.banner
-{
-
-	margin-top: 30px;
-	
-	
-    position: relative;
 
 
-}
 .textonimage
 {
-	position: absolute;
+	
 	top: 50px;
 	bottom: 0px;
 	left: 200px;
