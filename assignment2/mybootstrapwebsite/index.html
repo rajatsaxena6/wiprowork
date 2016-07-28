@@ -1,589 +1,612 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title></title>
-		<meta name="description" content="">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link href="includes/css/styles.css" rel="stylesheet">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
-	</head>
-	<body>
+<head>
 	
-	<div class="container" id="main">
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title></title>
+	<meta name="description" content="">
+	
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+	
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	
+</head>
+<body>
+	
+	
 
-		<div class="navbar navbar-fixed-top">
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 
-			<div class="container">
+		<div class="container" id="mainhead">
 
-
-				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  
-				 </button>
-				<a class="navbar-brand" href="#">
+			
+			<button class="navbar-toggle" data-target="#mynavbar" data-toggle="collapse" type="button">
+				
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				
+			</button>
+			<a class="navbar-brand" href="#">
 				<img src="images/smalllogo.jpg" alt="car logo">
-				</a>
+			</a>
+			
+			<!--end of navbar-header-->
 
-				<div class="nav-collapse collapse navbar-responsive-collapse">
+			<div class="navbar-collapse collapse" id="mynavbar">
 
 				<ul class="nav navbar-nav">
 
-				<li class="active">
-				<a href="#"> Home </a>
-				</li>
+					<li class="active">
+						<a href="#"> Home
+						</a>
+					</li>
 
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services 
-				  <strong class="caret"></strong></a>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services 
+							<strong class="caret"></strong></a>
 
-				    <ul class="dropdown-menu">
-				    <li> <a href="#"> Portfolio </a>
-				    <li class="divider">
-				    </li>
-				    <li> <a href="#"> Contact Us </a>
+							<ul class="dropdown-menu">
+								<li> <a href="#"> Portfolio </a>
+								</li>
+								<li class="divider">
+								</li>
+								<li> <a href="#"> Contact Us </a>
+								</li>
 
-				    <li> <a href="#"> Promotions </a>
+								<li> <a href="#"> Promotions </a>
+								</li>
 
-				    </ul><!--end droodown-menu-->
-				</li>
+							</ul><!--end dropdown-menu-->
+						</li>
 
-				</ul>
+					</ul>
 
-				<form class="navbar-form pull-left">
-				<input type="text" class="form-control" placeholder="Search this site" id="searchinput">
-				<button type="submit" class="btn btn-default">
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search this site" id="searchinput">
+						<button type="submit" class="btn btn-default">
 
-				<span class="glyphicon glyphicon-search">
-				</span>
-				</button>
+							<span class="glyphicon glyphicon-search">
+							</span>
+						</button>
 
-				</form>
+					</form>
 
 					<ul class="nav navbar-nav pull-right">
-					
+						
 						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="glyphicon glyphicon-user">
-						  </span> My Account
-						    <strong class="caret"></strong>
-						   </a>
+							<span class="glyphicon glyphicon-user">
+							</span> My Account
+							<strong class="caret"></strong>
+						</a>
 
 
-						   <ul class="dropdown-menu">
-						   	
-						   	<li>
-						   	  <a href="#"> <span class="glyphicon glyphicon-wrench"></span>Settings</a>
-						   	  </li>
-						   	  <li>
-						   	  <a href="#"> <span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
-						   	  </li>
-						   	  <li>
-						   	  <a href="#"> <span class="glyphicon glyphicon-briefcase"></span>Promo Codes</a>
-						   	   </li>
+						<ul class="dropdown-menu">
+							
+							<li>
+								<a href="#"> <span class="glyphicon glyphicon-wrench"></span>Settings</a>
+							</li>
+							<li>
+								<a href="#"> <span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+							</li>
+							<li>
+								<a href="#"> <span class="glyphicon glyphicon-briefcase"></span>Promo Codes</a>
+							</li>
 
-						   	   <li class="divider"></li>
-						   	   <li> 
-						   	   <a href="#"> <span class="glyphicon glyphicon-off"></span>Log Out</a>
-						   	  </li>
-
-
-						   	  
-						   	
-						   </ul>
-						   </li>
-						  
-					</ul>
-				</div> <!--end nav -collapse-->
-				</div> <!--end container-->
+							<li class="divider"></li>
+							<li> 
+								<a href="#"> <span class="glyphicon glyphicon-off"></span>Log Out</a>
+							</li>
 
 
-		
-		</div> <!--end navbar-->
- 
-		<div class="carousel slide" id="myCarousel">
-
-		  <!--indicators-->
-		    <ol class="carousel-indicators">
-		      <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-		      <li data-slide-to="1" data-target="#myCarousel"></li>
-		      <li data-slide-to="2" data-target="#myCarousel"></li>
-		      </ol>
-		      
-		  <div class="carousel-inner">
-		    <div class="item active" id="slide1">
-
-		      <div class="carousel-caption">
-		      <h4> Get! </h4>
-		        <p> Just an App ..that would not take much of your valuable time.
-		        </p>
-		      </div>
-		     </div>   
-
-		        <div class="item" id="slide2">
-		          <div class="carousel-caption">
-		     		 <h4> Set! </h4>
-		        		<p>We have got a huge collection from vintage to super fast cars..
-		        		</p>
-		        	</div>
-		        </div>
-
-		        <div class="item" id="slide3">
-		          <div class="carousel-caption">
-		     		 <h4> GO GO GO!</h4>
-		        		<p>The most efficient and time saving ride of your life...
-		        		</p>
-		        	</div>
-		        </div>
-
-		        </div> <!--end carousel inner-->
-		        <!--controls-->
-		        <a class="left carousel-control" data-slide="prev" href="#myCarousel">
-		          <span class="icon-prev">
-		          </span>
-		        </a>
-
-		        <a class="right carousel-control" data-slide="next" href="#myCarousel">
-		          <span class="icon-next">
-		          </span>
-		        </a>
-
-		        
-		        
-
-		
+							
+							
+						</ul>
+					</li>
+				</ul>
+				
+				
+				
+			</div>
 		</div>
+		>
+		<!--end nav -collapse-->
+	</nav> <!--end container-->
+
+
+	
+	
+	
+	<div class="carousel slide" id="myCarousel">
+
+		
+
+
+		<!--indicators-->
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+			<li data-slide-to="1" data-target="#myCarousel"></li>
+			<li data-slide-to="2" data-target="#myCarousel"></li>
+		</ol>
+		
+		<div class="carousel-inner">
+
+			<div class="item active" id="slide1">
+
+				<div class="carousel-caption">
+					<h4> Get! </h4>
+					<p> Just an App ..that would not take much of your valuable time.
+					</p>
+				</div>
+			</div>   
+
+			<div class="item" id="slide2">
+				<div class="carousel-caption">
+					<h4> Set! </h4>
+					<p>We have got a huge collection from vintage to super fast cars..
+					</p>
+				</div>
+			</div>
+
+			<div class="item" id="slide3">
+				<div class="carousel-caption">
+					<h4> GO GO GO!</h4>
+					<p>The most efficient and time saving ride of your life...
+					</p>
+				</div>
+			</div>
+
+		</div> <!--end carousel inner-->
+		<!--controls-->
+		<a class="left carousel-control" data-slide="prev" href="#myCarousel">
+			<span class="icon-prev">
+			</span>
+		</a>
+
+		<a class="right carousel-control" data-slide="next" href="#myCarousel">
+			<span class="icon-next">
+			</span>
+		</a>
+
+		
+		
+	</div><!--end container-fluid-->
+	
+	<!--end container carousel-->
+
+	
+
+	<div class="container" id="main">
 
 		<div class="row" id="bigCallout">
-		  <div class="col-12">
+			<div class="col-12">
 
 
-		  	<div class="alert alert-success alert-block fade in" id="successalert">
-		  	  <button type="button"  class="close" data-dismiss="alert">&times;
-		  	  </button>
-		  	    <h4>
-		  	    	Please Login!!
-		  	    </h4>
+				<div class="alert alert-success alert-block fade in" id="successalert">
+					<button type="button"  class="close" data-dismiss="alert">&times;
+					</button>
+					<h4>
+						Please Login!!
+					</h4>
 
-		  	      <p>
-		  	      	In order to use the application you need to create an account and just login..
-		  	      </p>
-		  	</div>
-		  	<!--visible for small devices-->
-		    <div class="well well-small visible-sm">
+					<p>
+						In order to use the application you need to create an account and just login..
+					</p>
+				</div>
+				<!--visible for small devices-->
+				<div class="well well-small visible-sm">
 
-		      <a href="#" class="btn btn-large btn-block btn-default">
-		      Call-us now.
-		        <span class="glyphicon glyphicon-phone">
-		        </span>
-		      </a>
-		    </div>
+					<a href="#" class="btn btn-large btn-block btn-default">
+						Call-us now.
+						<span class="glyphicon glyphicon-phone">
+						</span>
+					</a>
+				</div>
 
-		      <div class="well">
-		        <div class="page-header">
-		          <h1>
-		          	Drive a Mile!
-		          </h1>
-		          <small class="pull-right">
-		          	An enjoyable ride.
-		          </small>
-		        </div>
-		      <p class="lead"> With the service of having a car that has its own luxury why to worry about buying a new car.We can give you the world class car driving experience.
-		      </p>
-		    <a href="#" class="btn btn-large btn-primary" id="bookme"> Book Now!! 
-		    </a>
-		    <a href="#" class="btn btn-large btn-link"> easy steps 
-		    </a>
-		    </div>
+				<div class="well">
+					<div class="page-header">
+						<h1>
+							Drive a Mile!
+						</h1>
+						<small class="pull-right">
+							An enjoyable ride.
+						</small>
+					</div>
+					<p class="lead"> With the service of having a car that has its own luxury why to worry about buying a new car.We can give you the world class car driving experience.
+					</p>
+					<a href="#" class="btn btn-large btn-primary" id="bookme"> Book Now!! 
+					</a>
+					<a href="#" class="btn btn-large btn-link"> easy steps 
+					</a>
+				</div>
 
-		    
-		   </div>
+				
+			</div>
 		</div>
 
 		<div class="row" id="featureHeading">
-		  <div class="col-12">
-		    <h2>
-		    	And we have..
-		    </h2>
-		    <p class="lead">
-		       We have got a whole new set of features which you would definately like and encourage.
+			<div class="col-12">
+				<h2>
+					And we have..
+				</h2>
+				<p class="lead">
+					We have got a whole new set of features which you would definately like and encourage.
 
-		     </p>
-		</div>
+				</p>
+			</div>
 
 
 		</div>
 
 		<div class="row" id="feature">
-		  <div class="col-sm-4 feature">
-		    <div class="panel">
-		      <div class="panel-heading">
-		        <h3 class="panel-title">
-		        Car Pooling 
-		        </h3>
-		      </div>
-		    <img src="images/carpool-women-clipart-1.jpg" alt="carpool" class="img-circle">
-		    <p>
-		    	This is the era of pooling the car so you should pool it and save your money.Know someone who is unknown to you and be eco-friendly also.
-		    </p>
-		    <a href="#" target="_blank" class="btn btn-warning btn-block">CarPool Now
-		    </a>
-		    </div>
-		  </div>
+			<div class="col-sm-4 feature">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Car Pooling 
+						</h3>
+					</div>
+					<img src="images/carpool-women-clipart-1.jpg" alt="carpool" class="img-circle">
+					<p>
+						This is the era of pooling the car so you should pool it and save your money.Know someone who is unknown to you and be eco-friendly also.
+					</p>
+					<a href="#" target="_blank" class="btn btn-warning btn-block">CarPool Now
+					</a>
+				</div>
+			</div>
 
-		  <div class="col-sm-4 feature">
-		    <div class="panel">
-		      <div class="panel-heading">
-		        <h3 class="panel-title">
-		        Driving School
-		        </h3>
-		      </div>
-		    <img src="images/register.jpg" alt="mobile" class="img-circle">
-		    <p>
-		    	We know you want to drive your car on your own and for that we have a driving school. Register now and get the benefit of learning the car of your choice.
-		    </p>
-		    <a href="#" target="_blank" class="btn btn-danger btn-block">Enroll Now
-		    </a>
-		    </div>
-		  </div>
+			<div class="col-sm-4 feature">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Driving School
+						</h3>
+					</div>
+					<img src="images/register.jpg" alt="mobile" class="img-circle">
+					<p>
+						We know you want to drive your car on your own and for that we have a driving school. Register now and get the benefit of learning the car of your choice.
+					</p>
+					<a href="#" target="_blank" class="btn btn-danger btn-block">Enroll Now
+					</a>
+				</div>
+			</div>
 
-		  <div class="col-sm-4 feature">
-		    <div class="panel">
-		      <div class="panel-heading">
-		        <h3 class="panel-title">
-		        Super Cars!!
-		        </h3>
-		      </div>
-		    <img src="images/car.jpg" alt="carpool" class="img-circle">
-		    <p>
-		    	Have you experienced how it feels to drive a Ferrari GT-5 or a Porsche.Hurry up look for the exciting portfolio of cars that we rent you.
-		    </p>
-		    <a href="#" target="_blank" class="btn btn-info btn-block">View Cars.
-		    </a>
-		    </div>
-		  </div>
+			<div class="col-sm-4 feature">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Super Cars!!
+						</h3>
+					</div>
+					<img src="images/car.jpg" alt="carpool" class="img-circle">
+					<p>
+						Have you experienced how it feels to drive a Ferrari GT-5 or a Porsche.Hurry up look for the exciting portfolio of cars that we rent you.
+					</p>
+					<a href="#" target="_blank" class="btn btn-info btn-block">View Cars.
+					</a>
+				</div>
+			</div>
 
 
 		</div>
 
 		<div class="row" id="moreInfo">
-		 <div class="col-sm-6">
-		   <h3> We are Near You..</h3>
-		     <div class="tabbable">
-		       <ul class="nav nav-tabs">
-		         <li class="active">
-		           <a href="#tab1" data-toggle="tab"> Section 1
-		           </a>
-		           </li>
-		         <li> <a href="#tab2" data-toggle="tab">
-		         Section 2
-		         </a>
-		         </li>
-		        </ul>
-		        <div class="tab-content">
-		          <div class="tab-pane active" id="tab1">
-		            <h4>
-		            	<span class="glyphicon glyphicon-map-marker">
-		            	</span>
-		            	Our Location
-		              <small>
-		            	More like favourite place.
-		           	  </small>
-		            </h4>
-		            	<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7777.137741422649!2d77.6138315!3d12.935408000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sen!2sin!4v1469451756781" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="col-sm-6">
+				<h3> We are Near You..</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#tab1" data-toggle="tab"> Section 1
+							</a>
+						</li>
+						<li> <a href="#tab2" data-toggle="tab">
+							Section 2
+						</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab1">
+						<h4>
+							<span class="glyphicon glyphicon-map-marker">
+							</span>
+							Our Location
+							<small>
+								More like favourite place.
+							</small>
+						</h4>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7777.137741422649!2d77.6138315!3d12.935408000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sen!2sin!4v1469451756781" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-		            <p> We are expanding and never know we could have an office near you.So Locate us for any queries and also let us know where you live.We would deleiver you the best and also promise you to serve for the best.
-		           	</p>
-		            <p> Every office that we have is now also having the display room where you can look for the cars and also test drive your car.
-		           	</p>
-		          </div> <!--end tab pane-->
+						<p> We are expanding and never know we could have an office near you.So Locate us for any queries and also let us know where you live.We would deleiver you the best and also promise you to serve for the best.
+						</p>
+						<p> Every office that we have is now also having the display room where you can look for the cars and also test drive your car.
+						</p>
+					</div> <!--end tab pane-->
 
-		          <div class="tab-pane" id="tab2">
-		            <h4>
-		            	Donate a Ride.
-		            	 <small>
-		            	give a free ride to orphans.
-		            </small>
-		            </h4>
-		            <img src="images/orphan.jpg" class="thumbnail pull-left">
-		           		<p> We know that it is very costly and also very expensive to drive the super car.How about giving the joy of this super car to an orphan. If you have a lot then you should share it with others.We work day and night to donate and help the orphan people and get the blessings from them.
+					<div class="tab-pane" id="tab2">
+						<h4>
+							Donate a Ride.
+							<small>
+								give a free ride to orphans.
+							</small>
+						</h4>
+						<img src="images/orphan.jpg" class="thumbnail pull-left">
+						<p> We know that it is very costly and also very expensive to drive the super car.How about giving the joy of this super car to an orphan. If you have a lot then you should share it with others.We work day and night to donate and help the orphan people and get the blessings from them.
 
-		           	</p>
-		            <p> When you donate the ride to kids we keep your name confidential.It is in our policies and also we have something interesting for you. You earn points and with the collection of these points you will be able to top the leaderboard of top donors of the month.
-		            
-		           	</p>
+						</p>
+						<p> When you donate the ride to kids we keep your name confidential.It is in our policies and also we have something interesting for you. You earn points and with the collection of these points you will be able to top the leaderboard of top donors of the month.
+							
+						</p>
 
-		           	<hr>
-		           	<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
-		           	<span class="glyphicon glyphicon-hand-up">
-		           	</span>
-		           	Donate a Ride.
-		           
-		           	</a>
-		           	
-		           	<div class="modal fade" id="myModal">
-		           	  <div class="modal-dialog">
-		           	    <div class="modal-content">
-		           	      <div class="modal-header">
-		           	        <button class="close" data-dismiss="modal">&times;
-		           	        </button>
-		           	        <h4>Thanks for your Kindness</h4>
+						<hr>
+						<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+							<span class="glyphicon glyphicon-hand-up">
+							</span>
+							Donate a Ride.
+							
+						</a>
+						
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;
+										</button>
+										<h4>Thanks for your Kindness</h4>
 
-		           	        
-		           	        </div> <!--end modal header-->
+										
+									</div> <!--end modal header-->
 
-		           	      <div class="modal-body">
-		           	      <h4> Help them </h4>
-		           	        <p> This unique way of donating a free ride to kids in the super car is our way to show them that we care for them.</p>
+									<div class="modal-body">
+										<h4> Help them </h4>
+										<p> This unique way of donating a free ride to kids in the super car is our way to show them that we care for them.</p>
 
-		           	         
-
-
-		           	         <hr>
-
-		           	         <p> You are a true Human. </p>
-
-		           	         <small class="text-muted">
-		           	         Please provide your details.
-		           	         </small>
-
-		           	         <hr>
-
-		           	         	<form class="form-horizontal">
-		           	         	  <div class="form-group">
-		           	         	    <label class="col-lg-2 control-label" for="inputName">Name</label>
-
-		           	         	      <div class="col-lg-10">
-		           	         	       <input class="form-control" id="inputName" placeholder="Name" type="text">
-		           	         	       </div>
-		           	         	    </div>
-		           	         	    <div class="form-group">
-		           	         	    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-
-		           	         	      <div class="col-lg-10">
-		           	         	       <input class="form-control" id="inputEmail" placeholder="Email" type="email">
-		           	         	       </div>
-		           	         	    </div>
-		           	         	    <div class="form-group">
-		           	         	    <label class="col-lg-2 control-label" for="inputMessage">Address</label>
-
-		           	         	      <div class="col-lg-10">
-		           	         	        <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3">
-		           	         	        </textarea>
-
-		           	         	          <button class="btn btn btn-success pull-right type="submit">Send!</button>
-		           	         	       </div>
-		           	         	    </div>
-		           	         </form>
-
-		           	      </div><!--end modal body-->
-		           	      <div class="modal-footer">
-		           	        <button class="btn btn-default" data-dismiss="modal" type="button">Close
-		           	        </button>
-		           	        <button class="btn btn-primary" data-dismiss="modal" type="button">Save Changes
-		           	        </button>
-
-		           	        </div> <!--end modal footer-->
-		           	    </div><!--end modal content-->
-		           	  </div><!--end modal-dialog-->
-		           	</div><!--end mymodal-->
+										
 
 
+										<hr>
 
-		           	</div> <!--end tab pane-->
+										<p> You are a true Human. </p>
 
+										<small class="text-muted">
+											Please provide your details.
+										</small>
 
-		        </div> <!--end tab content-->
-		    
-		    </div> <!--end tabbable-->
-		    </div> <!--end col-6-->
+										<hr>
 
-		    <div class="col-sm-6">
-		    <h3> Know All About Cars</h3>
-		      <h4> Click on company </h4>
+										<form class="form-horizontal">
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="inputName">Name</label>
 
-		      <div class="list-group">
-		      	 <a href="#" class="list-group-item">
-		      	  <h4 class="list-group-item-heading">Ford </h4>
-		      	  <p class="list-group-item-text">The Ford Motor Company is an American multinational automaker headquartered in Dearborn, Michigan, a suburb of Detroit. It was founded by Henry Ford and incorporated on June 16, 1903. 
-		      	  </p>
-		      	  </a>
+												<div class="col-lg-10">
+													<input class="form-control" id="inputName" placeholder="Name" type="text">
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="inputEmail">Email</label>
 
-		      	  <a href="#" class="list-group-item">
-		      	  <h4 class="list-group-item-heading">Porsche</h4>
-		      	  <p class="list-group-item-text">Dr.-Ing. h.c. F. Porsche AG, usually shortened to Porsche AG, is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans
-		      	  </p>
-		      	  </a>
+												<div class="col-lg-10">
+													<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-lg-2 control-label" for="inputMessage">Address</label>
 
-		      	  <a href="#" class="list-group-item">
-		      	  <h4 class="list-group-item-heading"> Audi </h4>
-		      	  <p class="list-group-item-text">Audi AG is a German automobile manufacturer that designs, engineers, produces, markets and distributes luxury vehicles. Audi oversees worldwide operations from its headquarters in Ingolstadt, Bavaria, Germany. 
-		      	  </p>
-		      	  </a>
+												<div class="col-lg-10">
+													<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3">
+													</textarea>
 
-		      	  <a href="#" class="list-group-item">
-		      	  <h4 class="list-group-item-heading"> Chevrolet </h4>
-		      	  <p class="list-group-item-text"> Chevrolet, colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile manufacturer and a division of the American manufacturer General Motors 
-		      	  </p>
-		      	  </a>
+													<button class="btn btn btn-success pull-right type="submit">Send!</button>
+												</div>
+											</div>
+										</form>
 
-		      	  <a href="#" class="list-group-item">
-		      	  <h4 class="list-group-item-heading"> Mercedes-Benz </h4>
-		      	  <p class="list-group-item-text">Mercedes-Benz is a global automobile manufacturer and a division of the German company Daimler AG. The brand is known for luxury vehicles, buses, coaches, and trucks. The headquarters of Mercedes-Benz is in Stuttgart, Baden-Württemberg, Germany. 
-		      	  </p>
-		      	  </a>
-		      </div><!--end listgropu-->
-		      
-		    </div> <!--end col-->
+									</div><!--end modal body-->
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close
+										</button>
+										<button class="btn btn-primary" data-dismiss="modal" type="button">Save Changes
+										</button>
 
-		</div><!--end moreinfo-->
-		
-		
-  			<hr>
-		<div class="row" id="promotions"> 
-		  <div class="col-12">
-		    <h3>
-		    	We are not done yet...
-		    </h3>
-		  <div class="thumbnails row">
-		    <div class="col-6">
-		      <div class="thumbnail">
-		      	  <img src="images/refer.png">
-		      	    <div class="caption">
-		      	      <h3>
-		      	      	Refer to a friend.
-		      	      </h3>
-		      	        <p>
-		      	        	When you refer to your friend about the services that we have provided to you, then you got a chance to earn more points and a promo code. This will help you earn a free ride next time.
-		      	        </p>
-		      	        <a href="#" class="btn btn-primary" target="_blank">Refer Now.
-		      	        </a>
-		      	        <a href="#" class="btn btn-small" target="_blank">Learn More..
-		      	        </a>
-		      	    </div> <!--end caption-->
-
-		      </div><!--end thumbnail-->
-		    </div><!--end col-6-->
-
-		            <div class="col-6">
-		      <div class="thumbnail">
-		      	  <img src="images/menswallet.jpg">
-		      	    <div class="caption">
-		      	      <h3>
-		      	      	Secure Wallet
-		      	      </h3>
-		      	        <p>
-		      	        	Now if you don't have a change and you need to pay money ..you can transfer from our wallet.This is a 128 bit SSL secured wallet which can be used to do secure online transactions and also pay the bills.
-		      	        </p>
-		      	        <a href="#" class="btn btn-primary" target="_blank">My Wallet
-		      	        </a>
-		      	        <a href="#" class="btn btn-small" target="_blank">Learn More..
-		      	        </a>
-		      	    </div> <!--end caption-->
-
-		      </div><!--end thumbnail-->
-		    </div><!--end col-6-->
-		  </div> <!--end thumbnail row-->
-		  </div> <!--end col-12-->
-		</div> <!--end promotions-->
-
-		</div> <!--end main container-->
-
-		<footer>
-		<div class="row">
-		  <div class="col-12">
-		    <div class="col-sm-2">
-
-		    <h6>
-		    	CopyRight &copy; 2016
-		    </h6>
-		    </div><!--end col-sm-2-->
-
-		    <div class="col-sm-4">
-
-		    	<h6>
-		    		About Us!
-		    	</h6>
-		    	<p>
-		    		 A start up in the market. We have got a whole bunch of dedicated developers who would do anything to develop a finished product and also we would like to tell you that we have our roots digged deeper into the earth as you know that it is better to be down to earth.We have a driving school to teach you how to drive and also a social cause to help orphans. We have a secure wallet so that you could transact safely online and also more is yet to come.
-		    	</p>
-
-		    </div> <!--end col-sm-4-->
-
-		     <div class="col-sm-2">
-		     <h6>
-		     	Follow us 
-		     </h6>
-
-		     <ul class="unstyled">
-		     	<li><a href="#">Twitter</a></li>
-		     	<li><a href="#">Facebook</a></li>
-		     	<li><a href="#">Google Plus</a></li>
-		     
-		     </ul>
-
-		    </div><!--end col-sm-2-->
-
-		     <div class="col-sm-2">
-
-		     <h6>
-		     	Navigation
-		     	</h6>
-		     	<ul class="unstyled">
-		     	<li> <a href="#"> Home </a> </li>
-				<li> <a href="#"> Portfolio </a> </li>
-		     	<li> <a href="#"> Promotions </a> </li>
-		     	<li> <a href="#"> Contact Us</a> </li>
-		     	</ul>
-
-
-		     
-
-		    </div><!--end col-sm-2-->
-
-		     <div class="col-sm-2">
-		     <h6>
-		       Coded by Rajat Saxena
-		     </h6> 
-
-
-		    </div><!--end col-sm-2-->
+									</div> <!--end modal footer-->
+								</div><!--end modal content-->
+							</div><!--end modal-dialog-->
+						</div><!--end mymodal-->
 
 
 
-		    </div><!--end col-12-->
-			</div><!--end row-->
-		</footer>
+					</div> <!--end tab pane-->
+
+
+				</div> <!--end tab content-->
+				
+			</div> <!--end tabbable-->
+		</div> <!--end col-6-->
+
+		<div class="col-sm-6">
+			
+
+			<h3 id="kac"> Know All About Cars</h3>
+			<h4> Click on company </h4>
+
+			<div class="list-group">
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Ford </h4>
+					<p class="list-group-item-text">The Ford Motor Company is an American multinational automaker headquartered in Dearborn, Michigan, a suburb of Detroit. It was founded by Henry Ford and incorporated on June 16, 1903. 
+					</p>
+				</a>
+
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Porsche</h4>
+					<p class="list-group-item-text">Dr.-Ing. h.c. F. Porsche AG, usually shortened to Porsche AG, is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans
+					</p>
+				</a>
+
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading"> Audi </h4>
+					<p class="list-group-item-text">Audi AG is a German automobile manufacturer that designs, engineers, produces, markets and distributes luxury vehicles. Audi oversees worldwide operations from its headquarters in Ingolstadt, Bavaria, Germany. 
+					</p>
+				</a>
+
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading"> Chevrolet </h4>
+					<p class="list-group-item-text"> Chevrolet, colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile manufacturer and a division of the American manufacturer General Motors 
+					</p>
+				</a>
+
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading"> Mercedes-Benz </h4>
+					<p class="list-group-item-text">Mercedes-Benz is a global automobile manufacturer and a division of the German company Daimler AG. The brand is known for luxury vehicles, buses, coaches, and trucks. The headquarters of Mercedes-Benz is in Stuttgart, Baden-Württemberg, Germany. 
+					</p>
+				</a>
+			</div><!--end listgropu-->
+			
+		</div> <!--end col-->
+
+	</div><!--end moreinfo-->
 	
+	
+	<hr>
+	<div class="row" id="promotions"> 
+		<div class="col-12">
+			<h3>
+				We are not done yet...
+			</h3>
+			<div class="thumbnails row">
+				<div class="col-sm-6">
+					<div class="thumbnail">
+						<img src="images/refer.png">
+						<div class="caption">
+							<h3>
+								Refer to a friend.
+							</h3>
+							<p>
+								When you refer to your friend about the services that we have provided to you, then you got a chance to earn more points and a promo code. This will help you earn a free ride next time.
+							</p>
+							<a href="#" class="btn btn-primary" target="_blank">Refer Now.
+							</a>
+							<a href="#" class="btn btn-small" target="_blank">Learn More..
+							</a>
+						</div> <!--end caption-->
 
-	<!-- All Javascript at the bottom of the page for faster page loading -->
-		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
-	
-	</body>
+					</div><!--end thumbnail-->
+				</div><!--end col-6-->
+
+				<div class="col-sm-6">
+					<div class="thumbnail">
+						<img src="images/menswallet.jpg">
+						<div class="caption">
+							<h3>
+								Secure Wallet
+							</h3>
+							<p>
+								Now if you don't have a change and you need to pay money ..you can transfer from our wallet.This is a 128 bit SSL secured wallet which can be used to do secure online transactions and also pay the bills.
+							</p>
+							<a href="#" class="btn btn-primary" target="_blank">My Wallet
+							</a>
+							<a href="#" class="btn btn-small" target="_blank">Learn More..
+							</a>
+						</div> <!--end caption-->
+
+					</div><!--end thumbnail-->
+				</div><!--end col-6-->
+			</div> <!--end thumbnail row-->
+		</div> <!--end col-12-->
+	</div> <!--end promotions-->
+
+</div> <!--end main container-->
+
+<footer>
+	<div class="row">
+		<div class="col-12">
+			<div class="col-sm-2">
+
+				<h6>
+					CopyRight &copy; 2016
+				</h6>
+			</div><!--end col-sm-2-->
+
+			<div class="col-sm-4">
+
+				<h6>
+					About Us!
+				</h6>
+				<p>
+					A start up in the market. We have got a whole bunch of dedicated developers who would do anything to develop a finished product and also we would like to tell you that we have our roots digged deeper into the earth as you know that it is better to be down to earth.We have a driving school to teach you how to drive and also a social cause to help orphans. We have a secure wallet so that you could transact safely online and also more is yet to come.
+				</p>
+
+			</div> <!--end col-sm-4-->
+
+			<div class="col-sm-2">
+				<h6>
+					Follow us 
+				</h6>
+
+				<ul class="unstyled" id="un2">
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Google Plus</a></li>
+					
+				</ul>
+
+			</div><!--end col-sm-2-->
+
+			<div class="col-sm-2">
+
+				<h6>
+					Navigation
+				</h6>
+				<ul class="unstyled" id="un1">
+					<li> <a href="#"> Home </a> </li>
+					<li> <a href="#"> Portfolio </a> </li>
+					<li> <a href="#"> Promotions </a> </li>
+					<li> <a href="#"> Contact Us</a> </li>
+				</ul>
+
+
+				
+
+			</div><!--end col-sm-2-->
+
+			<div class="col-sm-2">
+				<h6>
+					Coded by Rajat Saxena
+				</h6> 
+
+
+			</div><!--end col-sm-2-->
+
+
+
+		</div><!--end col-12-->
+	</div><!--end row-->
+</footer>
+
+
+<!-- All Javascript at the bottom of the page for faster page loading -->
+
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="includes/js/script.js"></script>
+
+</body>
 </html>
 

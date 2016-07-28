@@ -37,11 +37,16 @@ footer
 }
 
 
- footer ul .unstyled
+ul.unstyled
 {
    list-style: none;
-   padding: 0px;
+   padding: 0;
+   
 }
+
+/*#un1,#un2{
+   list-style: none;
+}*/
 /* --------------------------------------
    Typography
    -------------------------------------- */
@@ -68,6 +73,7 @@ body{
    {
       width: 200px;
    }
+
    
    
 /* --------------------------------------
@@ -78,10 +84,17 @@ body{
 #myCarousel
 {
    margin-top: 60px;
+   min-width: 100%;
+   
+
+
 }
 
+
+
 #myCarousel .item{
-   height: 1000px;
+   height: 310px;
+
 
 }
 
@@ -93,17 +106,23 @@ body{
 .carousel-caption h4{
    font-size: 32px;
 }
+
+
+
 #slide1 {
-background: url(../../images/red-sports-car-medium.jpg) top center no-repeat;
+background: url(../../images/red-sports-car.jpg) top center no-repeat;
+min-width: 100%;
 }
 
 
 #slide2 {
-background: url(../../images/carmedium02.jpg) top center no-repeat;
+background: url(../../images/carlarge02.jpg) top center no-repeat;
+min-width: 100%
 }
 
 #slide3 {
-background: url(../../images/carmedium03.jpg) top center no-repeat;
+background: url(../../images/carlarge03.jpg) top center no-repeat;
+min-width: 100%
 }
 
 
@@ -120,9 +139,11 @@ margin-top: 20px;
 display: none;
 }
 
-#tab2 img .thumbnail
+#tab2  img
 {
-   margin: 0 20px 10px 0;
+   margin:0 20px 10px 0;
+   
+   
 }
 
 .thumbnails
@@ -137,6 +158,21 @@ display: none;
    line-height: 20px;
 }
 
+#mainhead
+{
+   height: 80px;
+}
+#tab1 p
+{
+   padding-top: 10px;
+}
+
+#kac
+{
+   padding-top: 10px;
+}
+
+
 
 /* --------------------------------------
    Media Queries
@@ -144,7 +180,12 @@ display: none;
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-	
+
+   .navbar-collapse{
+      background-color: #eee;
+      float: right;
+   }
+   
 }
 
 /* Landscape phone to portrait tablet */
@@ -152,7 +193,15 @@ display: none;
 	
 
    #myCarousel .item {height: 310px;}
+   
+   /*#mynavbar{
+   background-color: #eee;
+  }*/
 
+  .navbar-collapse{
+   background-color: #eee;
+    float: right;
+  }
 
 #slide1 {
 background: url('../../images/red-sports-car-small.jpg') top center no-repeat;
@@ -160,11 +209,11 @@ background: url('../../images/red-sports-car-small.jpg') top center no-repeat;
 
 
 #slide2 {
-background: url('../../images/carsmall02.jpg') top center;
+background: url('../../images/carsmall02.jpg') top center no-repeat;
 }
 
 #slide3 {
-background: url('../../images/carsmall03.jpg') top center;
+background: url('../../images/carsmall03.jpg') top center no-repeat;
 }
 
 .carousel-caption{
@@ -189,10 +238,30 @@ background: url('../../images/red-sports-car.jpg') top center no-repeat;
 
 
 #slide2 {
-background: url('../../images/carlarge02.jpg') top center;
+background: url('../../images/carlarge02.jpg') top center no-repeat;
 }
 
 #slide3 {
-background: url('../../images/carlarge03.jpg') top center;
+background: url('../../images/carlarge03.jpg') top center no-repeat;
+}
+}
+
+@media (max-width: 992px)
+{
+   #myCarousel .item {height: 400px;}
+  
+
+
+#slide1 {
+background: url('../../images/red-sports-car-medium.jpg') top center no-repeat;
+}
+
+
+#slide2 {
+background: url('../../images/carmedium02.jpg') top center no-repeat;
+}
+
+#slide3 {
+background: url('../../images/carmedium03.jpg') top center no-repeat;
 }
 }
