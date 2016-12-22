@@ -1,0 +1,804 @@
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+    background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+    background: radial-gradient(35px 35px, circle, red, #000);
+    /* Animation to spin and move the sphere */
+    -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+    -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+    -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+    animation: myfirst 4000ms linear alternate, sizereduce 4000ms linear alternate;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    position: absolute;
+    left: 50px;
+    top: 700px;
+    right: 500px;
+    bottom: 300px;
+}
+
+#alertmessage {
+    color: red;
+}
+
+#wdlogo {
+    padding-top: 15px;
+    width: 20%;
+    height: 20%;
+}
+
+#messageman {
+    width: 20%;
+    height: 20%;
+}
+
+#newyear {
+    width: 20%;
+    height: 20%;
+}
+
+#textmessage {
+    font-family: Josefin Slab;
+    font-size: 24px;
+}
+
+#textmessage b {
+    color: #66ccff;
+}
+
+
+/* Spinning the sphere using key frames */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Move sphere from left to right */
+
+@keyframes moveLeftToRight {
+    0% {
+        left: 50px;
+        top: 700px;
+    }
+    10% {
+        left: 100px;
+        top: 650px;
+    }
+    20% {
+        left: 150px;
+        top: 600px;
+    }
+    30% {
+        left: 200px;
+        top: 550px;
+    }
+    40% {
+        left: 250px;
+        top: 500px;
+    }
+    50% {
+        left: 300px;
+        top: 450px;
+    }
+    60% {
+        left: 350px;
+        top: 400px;
+    }
+    70% {
+        left: 400px;
+        top: 350px;
+    }
+    80% {
+        left: 450px;
+        top: 300px;
+    }
+    90% {
+        left: 500px;
+        top: 250px;
+    }
+    100% {
+        top: 200px;
+        left: 550px;
+    }
+}
+
+
+/*Size Reduce*/
+
+@keyframes sizereduce {
+    0% {
+        width: 80px;
+        height: 80px;
+    }
+    25% {
+        width: 70px;
+        height: 70px;
+    }
+    50% {
+        width: 60px;
+        height: 60px;
+    }
+    75% {
+        width: 50px;
+        height: 50px
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@keyframes myfirst {
+    from {
+        transform: rotate(20deg) translateX(80px);
+        left: 50px;
+        top: 700px;
+    }
+    to {
+        transform: rotate(20deg) translateX(10px);
+        left: 800px;
+        top: 0px;
+    }
+}
+
+
+/* Mobile Small*/
+
+@media (min-width: 320px) and (max-width: 374px) {
+    /* Styles */
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+        background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+        background: radial-gradient(35px 35px, circle, red, #000);
+        /* Animation to spin and move the sphere */
+        -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        animation: myfirst 2500ms linear alternate, sizereduce 2500ms linear alternate;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        position: absolute;
+        left: 50px;
+        top: 600px;
+        right: 20px;
+        bottom: 100px;
+    }
+    #headerwrap1 {
+        width: 100%;
+        background: url(../img/groundMobileS.jpg) #0b333f no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #goalkeeper {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        top: 200px;
+    }
+    .finalball {
+        position: absolute;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top: 300px;
+    }
+    .kicker {
+        position: absolute;
+        width: 50%;
+        top: 400px;
+        left: 45px;
+    }
+    #ticker {
+        position: absolute;
+        top: 380px;
+        left: 120px;
+        color: yellow;
+    }
+    #stopper {
+        display: none;
+    }
+    #stoppers {
+        display: none;
+    }
+    #textmessage {
+        font-family: Josefin Slab;
+        font-size: 16px;
+    }
+    #wdlogo {
+        padding-top: 15px;
+        width: 30%;
+        height: 40%;
+    }
+    @keyframes myfirst {
+        from {
+            transform: rotate(20deg) translateX(50px);
+            left: 50px;
+            top: 500px;
+        }
+        to {
+            transform: rotate(180deg) translateX(150px);
+            left: 300px;
+            top: 180px;
+        }
+    }
+    @keyframes sizereduce {
+        0% {
+            width: 60px;
+            height: 60px;
+        }
+        25% {
+            width: 50px;
+            height: 50px;
+        }
+        50% {
+            width: 40px;
+            height: 40px;
+        }
+        75% {
+            width: 30px;
+            height: 30px
+        }
+        100% {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+
+/*Mobile Small to Mobile Medium*/
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+        background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+        background: radial-gradient(35px 35px, circle, red, #000);
+        /* Animation to spin and move the sphere */
+        -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        animation: myfirst 2500ms linear alternate, sizereduce 2500ms linear alternate;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        position: absolute;
+        left: 50px;
+        top: 600px;
+        right: 20px;
+        bottom: 100px;
+    }
+    #wdlogo {
+        padding-top: 15px;
+        width: 30%;
+        height: 40%;
+    }
+    #headerwrap1 {
+        width: 100%;
+        background: url(../img/groundMobileM.jpg) #0b333f no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #goalkeeper {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        top: 170px;
+    }
+    .finalball {
+        position: absolute;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        top: 300px;
+    }
+    .kicker {
+        position: absolute;
+        width: 50%;
+        top: 350px;
+        left: 45px;
+    }
+    #ticker {
+        position: absolute;
+        top: 330px;
+        left: 120px;
+        color: yellow;
+    }
+    #stopper {
+        display: none;
+    }
+    #stoppers {
+        display: none;
+    }
+    #textmessage {
+        font-family: Josefin Slab;
+        font-size: 17px;
+    }
+    @keyframes myfirst {
+        from {
+            transform: rotate(20deg) translateX(50px);
+            left: 50px;
+            top: 500px;
+        }
+        to {
+            transform: rotate(180deg) translateX(150px);
+            left: 350px;
+            top: 170px;
+        }
+    }
+    @keyframes sizereduce {
+        0% {
+            width: 60px;
+            height: 60px;
+        }
+        25% {
+            width: 50px;
+            height: 50px;
+        }
+        50% {
+            width: 40px;
+            height: 40px;
+        }
+        75% {
+            width: 30px;
+            height: 30px
+        }
+        100% {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+        background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+        background: radial-gradient(35px 35px, circle, red, #000);
+        /* Animation to spin and move the sphere */
+        -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        animation: myfirst 2500ms linear alternate, sizereduce 2500ms linear alternate;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        position: absolute;
+        left: 50px;
+        top: 600px;
+        right: 20px;
+        bottom: 100px;
+    }
+    #wdlogo {
+        padding-top: 10px;
+        width: 40%;
+        height: 40%;
+    }
+    #headerwrap1 {
+        width: 100%;
+        background: url(../img/groundMobileL.jpg) #0b333f no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #goalkeeper {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        top: 150px;
+    }
+    .finalball {
+        position: absolute;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        top: 300px;
+    }
+    .kicker {
+        position: absolute;
+        width: 50%;
+        top: 320px;
+        left: 45px;
+    }
+    #ticker {
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        color: yellow;
+    }
+    #stopper {
+        display: none;
+    }
+    #stoppers {
+        display: none;
+    }
+    #textmessage {
+        font-family: Josefin Slab;
+        font-size: 18px;
+    }
+    @keyframes myfirst {
+        from {
+            transform: rotate(20deg) translateX(50px);
+            left: 50px;
+            top: 450px;
+        }
+        to {
+            transform: rotate(180deg) translateX(150px);
+            left: 370px;
+            top: 190px;
+        }
+    }
+    @keyframes sizereduce {
+        0% {
+            width: 60px;
+            height: 60px;
+        }
+        25% {
+            width: 50px;
+            height: 50px;
+        }
+        50% {
+            width: 40px;
+            height: 40px;
+        }
+        75% {
+            width: 30px;
+            height: 30px
+        }
+        100% {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+        background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+        background: radial-gradient(35px 35px, circle, red, #000);
+        /* Animation to spin and move the sphere */
+        -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        animation: myfirst 2500ms linear alternate, sizereduce 2500ms linear alternate;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        position: absolute;
+        left: 50px;
+        top: 600px;
+        right: 20px;
+        bottom: 100px;
+    }
+    #wdlogo {
+        padding-top: 2px;
+        width: 30%;
+        height: 30%;
+    }
+    #headerwrap1 {
+        width: 100%;
+        background: url(../img/groundTablet.jpg) #0b333f no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #goalkeeper {
+        position: relative;
+        width: 35%;
+        height: 35%;
+        top: 100px;
+    }
+    .finalball {
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 300px;
+        left: 300px;
+    }
+    .kicker {
+        position: absolute;
+        width: 30%;
+        top: 250px;
+        left: 45px;
+    }
+    #ticker {
+        position: absolute;
+        top: 230px;
+        left: 120px;
+        color: yellow;
+    }
+    #stopper {
+        display: inline-block;
+        position: absolute;
+        left: 500px;
+        top: 175px;
+    }
+    #stoppers {
+        display: none;
+    }
+    #textmessage {
+        font-family: Josefin Slab;
+        font-size: 22px;
+    }
+    @keyframes myfirst {
+        from {
+            transform: rotate(20deg) translateX(50px);
+            left: 50px;
+            top: 450px;
+        }
+        to {
+            transform: rotate(180deg) translateX(150px);
+            left: 450px;
+            top: 200px;
+        }
+    }
+    @keyframes sizereduce {
+        0% {
+            width: 70px;
+            height: 70px;
+        }
+        25% {
+            width: 60px;
+            height: 60px;
+        }
+        50% {
+            width: 50px;
+            height: 50px;
+        }
+        75% {
+            width: 40px;
+            height: 40px
+        }
+        100% {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1223px) {
+    /* Styles */
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+        background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+        background: radial-gradient(35px 35px, circle, red, #000);
+        /* Animation to spin and move the sphere */
+        -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        animation: myfirst 2500ms linear alternate, sizereduce 2500ms linear alternate;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        position: absolute;
+        left: 50px;
+        top: 600px;
+        right: 20px;
+        bottom: 100px;
+    }
+    #headerwrap1 {
+        width: 100%;
+        background: url(../img/groundLaptop.jpg) #0b333f no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #goalkeeper {
+        position: relative;
+        width: 30%;
+        height: 30%;
+        top: -10px;
+        left: 200px;
+    }
+    .finalball {
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 300px;
+    }
+    .kicker {
+        position: absolute;
+        width: 20%;
+        top: 280px;
+        left: 50px;
+    }
+    #ticker {
+        position: absolute;
+        top: 260px;
+        left: 150px;
+        color: yellow;
+    }
+    #stopper {
+        display: none;
+    }
+    #stoppers {
+        display: inline-block;
+        position: absolute;
+        left: 200px;
+        top: 80px;
+    }
+    #textmessage {
+        font-family: Josefin Slab;
+        font-size: 24px;
+    }
+    @keyframes myfirst {
+        from {
+            transform: rotate(20deg) translateX(50px);
+            left: 50px;
+            top: 450px;
+        }
+        to {
+            transform: rotate(180deg) translateX(150px);
+            left: 800px;
+            top: 150px;
+        }
+    }
+    @keyframes sizereduce {
+        0% {
+            width: 70px;
+            height: 70px;
+        }
+        25% {
+            width: 60px;
+            height: 60px;
+        }
+        50% {
+            width: 50px;
+            height: 50px;
+        }
+        75% {
+            width: 40px;
+            height: 40px
+        }
+        100% {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media (min-width: 1224px) {
+    /* Styles */
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: -webkit-radial-gradient(25px 25px, circle, grey, #000);
+        background: -moz-radial-gradient(25px 25px, circle, grey, #000);
+        background: radial-gradient(35px 35px, circle, red, #000);
+        /* Animation to spin and move the sphere */
+        -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -moz-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        -ms-animation: spin 1000ms linear infinite, moveLeftToRight 1.5s linear infinite;
+        animation: myfirst 2500ms linear alternate, sizereduce 2500ms linear alternate;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        position: absolute;
+        left: 60px;
+        top: 580px;
+        right: 20px;
+        bottom: 100px;
+    }
+    #headerwrap1 {
+        width: 100%;
+        background: url(../img/groundLaptop.jpg) #0b333f no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #goalkeeper {
+        position: relative;
+        width: 20%;
+        height: 20%;
+        top: -10px;
+        left: 200px;
+    }
+    .finalball {
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 200px;
+        left: 850px;
+    }
+    .kicker {
+        position: absolute;
+        width: 20%;
+        top: 150px;
+        left: 70px;
+    }
+    #ticker {
+        position: absolute;
+        top: 160px;
+        left: 120px;
+        color: yellow;
+    }
+    #stopper {
+        display: none;
+    }
+    #stoppers {
+        display: inline-block;
+        position: absolute;
+        left: 500px;
+        top: 70px;
+    }
+    #textmessage {
+        font-family: Josefin Slab;
+        font-size: 26px;
+    }
+    @keyframes myfirst {
+        from {
+            transform: rotate(20deg) translateX(50px);
+            left: 50px;
+            top: 450px;
+        }
+        to {
+            transform: rotate(180deg) translateX(150px);
+            left: 1000px;
+            top: 100px;
+        }
+    }
+    @keyframes sizereduce {
+        0% {
+            width: 70px;
+            height: 70px;
+        }
+        25% {
+            width: 60px;
+            height: 60px;
+        }
+        50% {
+            width: 50px;
+            height: 50px;
+        }
+        75% {
+            width: 40px;
+            height: 40px
+        }
+        100% {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

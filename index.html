@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>FreeKick</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link rel='stylesheet' id='prettyphoto-css' href="css/prettyPhoto.css" type='text/css' media='all'>
+    <link href="css/fontello.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin
++Slab' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    body {
+        padding-top: 0px;
+    }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script charset="utf-8">
+    $(document).ready(function() {
+        $("#headerwrap1").hide();
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+
+        $("#kick").click(function() {
+
+            var reg = /^[a-zA-Z\s]+$/;
+
+            var name = $("#name").val();
+            if (reg.test(name)) {
+
+                $("#headerwrap").hide();
+                $("#headerwrap1").show();
+                $("#sound").trigger('load');
+                $("#sound").trigger('play');
+                $('#circle').addClass("circle");
+
+                setTimeout("$('#circle').removeClass('circle');", 4000);
+
+                setTimeout("$('#goalkeeper').addClass('animated bounce');", 3000);
+                setTimeout("$('#stoppers').addClass('animated bounce');", 2000);
+
+                $(".target").text(name);
+                setTimeout("$('#message').modal('show');", 5000);
+                setTimeout("$('#messageman').addClass('animated slideInDown');", 5250);
+                setTimeout("$('#textmessage').addClass('animated fadeIn');", 5600);
+
+            } else {
+
+                $("#alertmessage").text("please enter a name!");
+            }
+
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <h1 class="brand"><a href="index.html">FreeKick!</a></h1>
+                    <a href="https://www.wiprodigital.com" target="_blank"> <img src="img/WD_logo_NEG_RGB.png" class="pull-right img-responsive" id="wdlogo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="headerwrap">
+        <header class="clearfix">
+            <h1><span>FreeKick!</span> makes you feel Happy.</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <h2>Enter Your Name</h2>
+                        <input id="name" type="text" name="your-name" placeholder="Enter Your Name" class="cform-text" size="40" title="your name" required>
+                        <input id="kick" type="submit" value="Go for Kick" class="cform-submit">
+                    </div>
+                    <div>
+                        <p id="alertmessage">
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <ul class="icon">
+                            <li><a href="https://twitter.com/wiprodigital" target="_blank"><i class="icon-twitter-circled"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/wipro-digital" target="_blank"><i class="icon-linkedin-circled"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="headerwrap1">
+        <header class=clearfix>
+            <strong id="ticker" class="animated slideInUp"> <span class="target"></span></strong>
+            <img src="img/kicker.png" class="animated fadeOut kicker">
+            <img src="img/kicker2.png" class="animated slideInUp kicker">
+            <img src="img/goalkeeper1.png" id="goalkeeper" class="animated shake">
+            <img src="img/stopper2.png" class="animated bounce" id="stopper">
+            <img src="img/stoppers2.png" id="stoppers">
+            <img src="img/footballnew.png" id="circle" class="finalball">
+        </header>
+        <div class="modal fade" tabindex="-1" role="dialog" id="message">
+            <div class="modal-dialog" role="document">
+                <div class="modal-header">
+                    <h2 class="modal-title">Hi , <span class="target"></span></h2>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img src="img/digital11.png" class="thumbnail pull-left img-responsive" id="messageman">
+                        <p id="textmessage">
+                            <i>Like You,</i> we’re glad to see so many <b class="text-primary"> Digital Disruptions </b> of <b>2016</b> in the past.<i> We wish you a very</i>
+                            <br><b>Happy Holiday Season</b>
+                            <br>&
+                            <br><i>All The Best for a Disruptive</i> <b>2017</b>
+                        </p>
+                        <img src="img/newyear.gif" class="thumbnail pull-right img-responsive" id="newyear">
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <p class="text-center ">CopyRight @ <b>Wipro</b> digital</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <audio id="sound" loop="loop" preload="none">
+                <source src="footballcrowd.mp3">
+            </audio>
+        </div>
+    </div>
+    <script src="js/bootstrap.js "></script>
+    <script src="js/jquery.prettyPhoto.js "></script>
+    <script src="js/site.js "></script>
+</body>
+
+</html>
